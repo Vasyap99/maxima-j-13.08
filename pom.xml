@@ -18,7 +18,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <packaging>jar</packaging>
 
    <dependencies>
-       <!--dependency>
+       <dependency>
            <groupId>org.junit.jupiter</groupId>
            <artifactId>junit-jupiter-api</artifactId>
            <version>5.11.0</version>
@@ -35,7 +35,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
            <artifactId>junit-jupiter-params</artifactId>
            <version>5.11.0</version>
            <scope>test</scope>
-       </dependency-->
+       </dependency>
  
    </dependencies>
 
