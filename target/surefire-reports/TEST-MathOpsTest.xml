@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MathOpsTest" time="0.071" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MathOpsTest" time="0.507" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="c:\OpenJDK\bin"/>
-    <property name="sun.java.command" value="C:\Users\k\AppData\Local\Temp\surefire10568172662509804137\surefirebooter-20240817110625665_3.jar C:\Users\k\AppData\Local\Temp\surefire10568172662509804137 2024-08-17T11-06-15_959-jvmRun1 surefire-20240817110625665_1tmp surefire_0-20240817110625665_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\k\AppData\Local\Temp\surefire11034096305473153906\surefirebooter-20240817111242893_3.jar C:\Users\k\AppData\Local\Temp\surefire11034096305473153906 2024-08-17T11-12-41_573-jvmRun1 surefire-20240817111242893_1tmp surefire_0-20240817111242893_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\java\new\_maxima\dz\13.08\target\test-classes;c:\java\new\_maxima\dz\13.08\target\classes;C:\Users\k\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\k\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\k\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\k\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\k\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\k\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;C:\Users\k\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\k\AppData\Local\Temp\surefire10568172662509804137\surefirebooter-20240817110625665_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\k\AppData\Local\Temp\surefire11034096305473153906\surefirebooter-20240817111242893_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
     <property name="java.runtime.version" value="17.0.4.1+1"/>
@@ -49,14 +49,14 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="native.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="c:\OpenJDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Embarcadero\Studio\21.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl;C:\oracle\product\10.2.0\client_2\bin;C:\oracle\product\10.2.0\client_1;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PostgreSQL\12\bin;C:\FPC\3.2.2\bin\i386-Win32;C:\Users\k\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\k\AppData\Local\Programs\Python\Python37-32\;C:\Qt5\Tools\CMake_64\bin;C:\Qt5\5.15.2\mingw81_32\bin;C:\Qt5\Tools\mingw810_32\bin\;C:\mingw32-12\bin;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;."/>
+    <property name="java.library.path" value="c:\OpenJDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Embarcadero\Studio\21.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl;C:\oracle\product\10.2.0\client_2\bin;C:\oracle\product\10.2.0\client_1;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PostgreSQL\12\bin;C:\FPC\3.2.2\bin\i386-Win32;C:\Users\k\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\k\AppData\Local\Programs\Python\Python37-32\;C:\Qt5\Tools\CMake_64\bin;C:\Qt5\5.15.2\mingw81_32\bin;C:\Qt5\Tools\mingw810_32\bin\;C:\mingw32-12\bin;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;c:\java\new\__tools\apache-maven-3.9.1\bin\;."/>
     <property name="java.vm.info" value="mixed mode, emulated-client"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17.0.4.1+1"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="sum" classname="MathOpsTest" time="0.063">
+  <testcase name="sum" classname="MathOpsTest" time="0.294">
     <system-out><![CDATA[msg from test
 ]]></system-out>
   </testcase>
