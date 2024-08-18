@@ -26,4 +26,16 @@ public class MathOpsTest{
         assertEquals(o.div(4,2),2); 
         System.out.println("msg from div()");
     }
+
+    @Test
+    public void mul_throwsException(){
+        assertThrows(IllegalArgumentException.class,()->o.mul(2,0)); 
+        System.out.println("msg from mul_t()");
+    }
+    @Test
+    public void div_throwsException(){
+        assertThrows(IllegalArgumentException.class,()->o.div(2,0)); 
+        System.out.println("msg from div_t()");
+    }
+
 }
