@@ -13,11 +13,13 @@ public class MathOps{
 
     //метод, который перемножает два числа
     public int mul(int a,int b){
+        if(b==0) throw new IllegalArgumentException();
         return a*b;
     }
 
     //метод, который находит частное двух чисел
     public int div(int a,int b){
+        if(b==0) throw new IllegalArgumentException();
         return a/b;
     }
 
