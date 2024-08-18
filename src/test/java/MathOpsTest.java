@@ -28,6 +28,11 @@ public class MathOpsTest{
     public void div(){
         assertEquals(o.div(4,2),2); 
     }
+    @Test
+    @DisplayName("msg from pow()")
+    public void exp(){
+        assertEquals(o.exp(4,2),16); 
+    }
 
     @Nested
     @DisplayName("throw tests:")
