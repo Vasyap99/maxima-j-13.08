@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 
 
 public class MathOpsTest{
@@ -28,15 +29,18 @@ public class MathOpsTest{
         assertEquals(o.div(4,2),2); 
     }
 
-    @Test
-    @DisplayName("msg from mul_t()")
-    public void mul_throwsException(){
-        assertThrows(IllegalArgumentException.class,()->o.mul(2,0)); 
+    @Nested
+    @DisplayName("throw tests:")
+    class MathOps_throwTest{
+        @Test
+        @DisplayName("msg from mul_t()")
+        public void mul_throwsException(){
+            assertThrows(IllegalArgumentException.class,()->o.mul(2,0)); 
+        }
+        @Test
+        @DisplayName("msg from div_t()")
+        public void div_throwsException(){
+            assertThrows(IllegalArgumentException.class,()->o.div(2,0)); 
+        }
     }
-    @Test
-    @DisplayName("msg from div_t()")
-    public void div_throwsException(){
-        assertThrows(IllegalArgumentException.class,()->o.div(2,0)); 
-    }
-
 }
