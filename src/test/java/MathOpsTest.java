@@ -1,41 +1,42 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
 
 
 public class MathOpsTest{
     private final dz13_08.MathOps o=new dz13_08.MathOps();
 
     @Test
+    @DisplayName("msg from sum()")
     public void sum(){
         assertEquals(o.sum(2,4),6); 
-        System.out.println("msg from sum()");
     }
     @Test
+    @DisplayName("msg from sub()")
     public void sub(){
         assertEquals(o.sub(2,4),-2); 
-        System.out.println("msg from sub()");
     }
     @Test
+    @DisplayName("msg from mul()")
     public void mul(){
         assertEquals(o.mul(2,4),8); 
-        System.out.println("msg from mul()");
     }
     @Test
+    @DisplayName("msg from div()")
     public void div(){
         assertEquals(o.div(4,2),2); 
-        System.out.println("msg from div()");
     }
 
     @Test
+    @DisplayName("msg from mul_t()")
     public void mul_throwsException(){
         assertThrows(IllegalArgumentException.class,()->o.mul(2,0)); 
-        System.out.println("msg from mul_t()");
     }
     @Test
+    @DisplayName("msg from div_t()")
     public void div_throwsException(){
         assertThrows(IllegalArgumentException.class,()->o.div(2,0)); 
-        System.out.println("msg from div_t()");
     }
 
 }
