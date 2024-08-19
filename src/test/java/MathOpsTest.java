@@ -11,28 +11,37 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class MathOpsTest{
     private final dz13_08.MathOps o=new dz13_08.MathOps();
 
-    @ParameterizedTest(name="values: {0},{1}")
-    @CsvSource(value={"2,4","7,-1","4,0","-55,1"})
+    @ParameterizedTest(name="values: {0},{1},{2}")
+    @CsvSource(value={"2,4,6","7,-1,6","4,0,4","-55,1,-54"})
     @DisplayName("msg from sum()")
-    public void sum(int a,int b){
-        System.out.println(""+a+":"+b); 
-        assertEquals(o.sum(2,4),6); 
+    public void sum(int a,int b,int c){
+        //System.out.println(""+a+":"+b+":"+c); 
+        assertEquals(o.sum(a,b),c); 
     }
-    @Test
+
+    @ParameterizedTest(name="values: {0},{1},{2}")
+    @CsvSource(value={"2,4,-2","7,-1,8","4,0,4","-55,1,-56"})
     @DisplayName("msg from sub()")
-    public void sub(){
-        assertEquals(o.sub(2,4),-2); 
+    public void sub(int a,int b,int c){
+        //System.out.println(""+a+":"+b+":"+c); 
+        assertEquals(o.sub(a,b),c); 
     }
-    @Test
+
+    @ParameterizedTest(name="values: {0},{1},{2}")
+    @CsvSource(value={"2,4,8","7,-1,-7","4,1,4"})
     @DisplayName("msg from mul()")
-    public void mul(){
-        assertEquals(o.mul(2,4),8); 
+    public void mul(int a,int b,int c){
+        //System.out.println(""+a+":"+b+":"+c); 
+        assertEquals(o.mul(a,b),c); 
     }
-    @Test
+
+    @ParameterizedTest(name="values: {0},{1},{2}")
+    @CsvSource(value={"7,2,3","7,-1,-7","4,2,2"})
     @DisplayName("msg from div()")
-    public void div(){
-        assertEquals(o.div(4,2),2); 
+    public void div(int a,int b,int c){
+        assertEquals(o.div(a,b),c); 
     }
+
     @Test
     @DisplayName("msg from pow()")
     public void exp(){
