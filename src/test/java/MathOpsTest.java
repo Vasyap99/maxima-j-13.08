@@ -57,11 +57,11 @@ public class MathOpsTest{
 
 
     static Stream<Object> args1() {
-    return Stream.of(
+        return Stream.of(
             Arguments.of(7, 2,3),
             Arguments.of(-5, 2,-2),
             Arguments.of(9, 4,2)
-    );
+        );
     }
     static Stream<Integer> args2() {
         return Stream.of(-7,2,-3);
