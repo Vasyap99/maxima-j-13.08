@@ -9,7 +9,14 @@ import org.junit.jupiter.api.AfterAll;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.MethodSource;
 
+import java.util.stream.Stream;
+import java.util.List;
+
+
+import org.junit.jupiter.params.provider.Arguments;
 
 public class MathOpsTest{
     private final dz13_08.MathOps o=new dz13_08.MathOps();
@@ -48,10 +55,23 @@ public class MathOpsTest{
         assertEquals(o.mul(a,b),c); 
     }
 
+
+    static Stream<Object> args1() {
+    return Stream.of(
+            Arguments.of(7, 2,3),
+            Arguments.of(-5, 2,-2),
+            Arguments.of(9, 4,2)
+    );
+    }
+    static Stream<Integer> args2() {
+        return Stream.of(-7,2,-3);
+    }
+
     @ParameterizedTest(name="values: {0},{1},{2}")
-    @CsvSource(value={"7,2,3","7,-1,-7","4,2,2"})
+    @MethodSource("args1")
     @DisplayName("msg from div()")
-    public void div(int a,int b,int c){
+    public void div(Integer a,Integer b,Integer c){
+        System.out.println("div: "+a+":"+b+":"+c); 
         assertEquals(o.div(a,b),c); 
     }
 
