@@ -4,12 +4,25 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterAll;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 
 public class MathOpsTest{
     private final dz13_08.MathOps o=new dz13_08.MathOps();
+
+    @BeforeAll
+    public static void init() {
+        System.out.println("Начинается тестирование");
+    }
+
+    @AfterAll
+    public static void end() {
+        System.out.println("Тестирование закончилось");
+    }
 
     @ParameterizedTest(name="values: {0},{1},{2}")
     @CsvSource(value={"2,4,6","7,-1,6","4,0,4","-55,1,-54"})
