@@ -4,13 +4,18 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 
 public class MathOpsTest{
     private final dz13_08.MathOps o=new dz13_08.MathOps();
 
-    @Test
+    @ParameterizedTest(name="values: {0},{1}")
+    @CsvSource(value={"2,4","7,-1","4,0","-55,1"})
     @DisplayName("msg from sum()")
-    public void sum(){
+    public void sum(int a,int b){
+        System.out.println(""+a+":"+b); 
         assertEquals(o.sum(2,4),6); 
     }
     @Test
