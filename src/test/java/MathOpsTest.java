@@ -11,12 +11,29 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ArgumentsSource;
+
+import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.params.provider.ArgumentsProvider;
+
 
 import java.util.stream.Stream;
 import java.util.List;
 
 
 import org.junit.jupiter.params.provider.Arguments;
+
+
+class MulArgumentsProvider implements ArgumentsProvider {
+    @Override
+    public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
+        return Stream.of(
+          Arguments.of(2,4,8),
+          Arguments.of(7,-1,-7),
+          Arguments.of(4,1,4)
+        );
+    }
+}
 
 public class MathOpsTest{
     private final dz13_08.MathOps o=new dz13_08.MathOps();
@@ -48,7 +65,7 @@ public class MathOpsTest{
     }
 
     @ParameterizedTest(name="values: {0},{1},{2}")
-    @CsvSource(value={"2,4,8","7,-1,-7","4,1,4"})
+    @ArgumentsSource(MulArgumentsProvider.class)
     @DisplayName("msg from mul()")
     public void mul(int a,int b,int c){
         //System.out.println(""+a+":"+b+":"+c); 
@@ -62,9 +79,6 @@ public class MathOpsTest{
             Arguments.of(-5, 2,-2),
             Arguments.of(9, 4,2)
         );
-    }
-    static Stream<Integer> args2() {
-        return Stream.of(-7,2,-3);
     }
 
     @ParameterizedTest(name="values: {0},{1},{2}")

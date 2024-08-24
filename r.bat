@@ -4,6 +4,6 @@
 
 @set JAVA_HOME=c:\OpenJDK\
 
-@c:\openjdk\bin\java.exe -jar c:\java\new\_maxima\dz\25.06\target\tvset-2.0-SNAPSHOT.jar
+@c:\openjdk\bin\java.exe -jar target\mathOps-2.0-SNAPSHOT.jar
 
 @pause
